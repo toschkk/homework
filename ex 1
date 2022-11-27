@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter the money: ");
+        Scanner scan = new Scanner(System.in);
+        double x = scan.nextDouble();
+        if ( x<=0) {
+            System.out.println("Bill total amount cannot be negative");
+            System.exit(0);
+        }
+        System.out.println("Enter the number of friends: ");
+        double b = scan.nextDouble();
+        if ( b <= 0) {
+            System.out.println("Number of friends cannot be negative or zero");
+            System.exit(0);
+        }
+        double c = x / b;
+        double y = (c / 100) * 10;
+        c = c + y;
+        System.out.println(c);
+
+
+
+        
+
+
+    }
+}
