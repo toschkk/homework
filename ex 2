@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("а: ");
+        Scanner scan = new Scanner(System.in);
+        double a = scan.nextDouble();
+
+        System.out.println("b: ");
+        double b = scan.nextDouble();
+        System.out.println("h: ");
+        double h = scan.nextDouble();
+        int k = 0;
+        if (h<=1a) {
+            System.out.println("Відповідь: " + 1);
+            System.exit(0);
+        }
+        if (b>=a) {
+            System.out.println("Impossible");
+            System.exit(0);
+        }
+        while ( h>0) {
+            if (h-a==0) {
+                k++;
+                break;
+            }
+            h = h-(a-b);
+            k++;
+
+        }
+
+        System.out.println("Відповідь: " + k);
+
+
+
+
+        
+
+
+    }
+}
